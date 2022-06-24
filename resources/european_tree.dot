@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<node &#35;0<br/>macaroni &le; 0.5<br/>samples = 4514<br/>value = [1264, 3250]<br/>class = italian>, fillcolor="#86c3ef"] ;
+1 [label=<node &#35;1<br/>olive_oil &le; 0.5<br/>samples = 3578<br/>value = [1248, 2330]<br/>class = italian>, fillcolor="#a3d1f3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>parmesan_cheese &le; 0.5<br/>samples = 1912<br/>value = [907, 1005]<br/>class = italian>, fillcolor="#ecf5fc"] ;
+1 -> 2 ;
+3 [label=<node &#35;3<br/>samples = 1696<br/>value = [873, 823]<br/>class = french>, fillcolor="#fef8f4"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 216<br/>value = [34, 182]<br/>class = italian>, fillcolor="#5eafea"] ;
+2 -> 4 ;
+5 [label=<node &#35;5<br/>mustard &le; 0.5<br/>samples = 1666<br/>value = [341, 1325]<br/>class = italian>, fillcolor="#6cb6ec"] ;
+1 -> 5 ;
+6 [label=<node &#35;6<br/>samples = 1587<br/>value = [289, 1298]<br/>class = italian>, fillcolor="#65b3eb"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>samples = 79<br/>value = [52, 27]<br/>class = french>, fillcolor="#f2c2a0"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>cognac &le; 0.5<br/>samples = 936<br/>value = [16, 920]<br/>class = italian>, fillcolor="#3c9fe5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<node &#35;9<br/>potato &le; 0.5<br/>samples = 935<br/>value = [15, 920]<br/>class = italian>, fillcolor="#3c9fe5"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>samples = 913<br/>value = [11, 902]<br/>class = italian>, fillcolor="#3b9ee5"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>samples = 22<br/>value = [4, 18]<br/>class = italian>, fillcolor="#65b3eb"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>samples = 1<br/>value = [1, 0]<br/>class = french>, fillcolor="#e58139"] ;
+8 -> 12 ;
+}
